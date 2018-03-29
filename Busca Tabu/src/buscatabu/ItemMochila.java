@@ -4,17 +4,17 @@ public class ItemMochila {
 
 	private String nome;
 	private double peso;
-	private double benefincio;
+	private double beneficio;
 
 	public ItemMochila() {
 		super();
 	}
 
-	public ItemMochila(String nome, double peso, double benefincio) {
+	public ItemMochila(String nome, double peso, double beneficio) {
 		super();
 		this.nome = nome;
 		this.peso = peso;
-		this.benefincio = benefincio;
+		this.beneficio = beneficio;
 	}
 
 	public String getNome() {
@@ -33,12 +33,12 @@ public class ItemMochila {
 		this.peso = peso;
 	}
 
-	public double getBenefincio() {
-		return benefincio;
+	public double getBeneficio() {
+		return beneficio;
 	}
 
-	public void setBenefincio(double benefincio) {
-		this.benefincio = benefincio;
+	public void setBeneficio(double beneficio) {
+		this.beneficio = beneficio;
 	}
 
 }

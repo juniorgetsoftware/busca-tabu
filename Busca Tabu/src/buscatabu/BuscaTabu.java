@@ -63,7 +63,7 @@ public class BuscaTabu {
 
 	private void initAlpha() {
 		for (ItemMochila d : itensMochila) {
-			alpha += d.getBenefincio();
+			alpha += d.getBeneficio();
 		}
 	}
 
@@ -117,7 +117,7 @@ public class BuscaTabu {
 		double beneficio = 0;
 		for (int i = 0; i < solution.length; i++) {
 			if (solution[i] == 1) {
-				beneficio += itensMochila.get(i).getBenefincio();
+				beneficio += itensMochila.get(i).getBeneficio();
 			}
 		}
 
@@ -164,7 +164,7 @@ public class BuscaTabu {
 		double beneficio = 0;
 		for (int i = 0; i < solution.length; i++) {
 			if (solution[i] == 1) {
-				beneficio += itensMochila.get(i).getBenefincio();
+				beneficio += itensMochila.get(i).getBeneficio();
 			}
 		}
 
@@ -195,8 +195,8 @@ public class BuscaTabu {
 		for (int i = 0; i < bestSolucao.length; i++) {
 			if (bestSolucao[i] == 1) {
 				System.out.println("Item: " + itensMochila.get(i).getNome() + "\tPeso: " + itensMochila.get(i).getPeso()
-						+ "\nBeneficio: " + itensMochila.get(i).getBenefincio());
-				beneficio += itensMochila.get(i).getBenefincio();
+						+ "\nBeneficio: " + itensMochila.get(i).getBeneficio());
+				beneficio += itensMochila.get(i).getBeneficio();
 				peso += itensMochila.get(i).getPeso();
 			}
 		}
